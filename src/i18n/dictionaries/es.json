@@ -1,0 +1,146 @@
+{
+  "metadata": {
+    "title": "Aurora",
+    "description": "Aurora es la plataforma de IA que impulsa a tus equipos de servicio al cliente, operaciones y marketing."
+  },
+  "nav": {
+    "customerService": "Servicio al cliente",
+    "operations": "Operaciones",
+    "marketing": "Marketing",
+    "cta": "Agenda un demo",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "home": "Ir al inicio",
+    "language": "Idioma",
+    "privacy": "Política de privacidad",
+    "terms": "Términos de servicio"
+  },
+  "footer": {
+    "solutions": "Soluciones",
+    "contact": "Contacto",
+    "copyright": "{year} Aurora. Todos los derechos reservados."
+  },
+  "customerService": {
+    "title": "Impulsando el servicio al cliente",
+    "description": "Aurora despliega agentes de IA conversacional para resolver preguntas, escalar solicitudes y automatizar procesos. Liderando la era del trabajo colaborativo con IA — todo lo que antes requería un equipo completo, ahora sucede en una sola conversación.",
+    "cta": "Agenda un demo",
+    "panel": {
+      "title": "Experiencia todo en uno",
+      "description": "Desde módulos de agentes personalizados e integración de bases de conocimiento hasta diseño de flujos de trabajo, conecta fácilmente tus herramientas existentes y supervisa toda tu fuerza laboral híbrida—IA y humana—en un solo lugar.",
+      "image": "/hero/panel-es.png",
+      "imageAlt": "Panel de Aurora con métricas de servicio al cliente"
+    },
+    "control": {
+      "title": "Control total",
+      "description": "El negocio define y administra el conocimiento y las herramientas disponibles para cada agente.",
+      "image": "/hero/control-total-es.png",
+      "imageAlt": "Un agente de Aurora consultando documentos y una API para responder por WhatsApp"
+    }
+  },
+  "growth": {
+    "title": "Convierte conversaciones en crecimiento empresarial",
+    "description": "Reduce costos operativos, elimina tareas repetitivas y permite que tu equipo se enfoque en iniciativas de alto impacto.",
+    "customerCare": {
+      "title": "Servicio al cliente",
+      "description": "Configura el tono y estilo de tu agente para responder dudas al instante en cualquier canal, de forma segura y en tiempo real.",
+      "image": "/section3/atencion-cliente-es.png",
+      "imageAlt": "Una persona chatea desde el móvil con un agente de Aurora que verifica su identidad"
+    },
+    "pqrs": {
+      "title": "PQRS",
+      "description": "Gestiona peticiones, quejas y reclamos de punta a punta: recopila detalles en un solo chat, aplica filtros de seguridad, notifica actualizaciones al usuario y mide el rendimiento histórico.",
+      "image": "/section3/PQRS-es.png",
+      "imageAlt": "Un agente de Aurora radica un reclamo y devuelve el número de caso y el plazo de resolución"
+    }
+  },
+  "workflows": {
+    "title": "Impulsa la automatización completa de flujos de trabajo",
+    "description": "Crea agentes de IA especializados configurados para los requisitos de tu empresa y proporciona a cada departamento un equipo colaborativo inteligente.",
+    "expandLabel": "Ver {name}",
+    "schedule": {
+      "title": "Agenda inteligente",
+      "description": "Coordina citas de forma autónoma, envía recordatorios automáticos, se sincroniza con tus calendarios y reorganiza la disponibilidad de tu equipo en tiempo real para eliminar fricciones.",
+      "image": "/section4/agenda-es.png",
+      "imageAlt": "Un agente de Aurora propone días y horarios disponibles y confirma una cita"
+    },
+    "certificates": {
+      "title": "Certificados",
+      "description": "Permite que tus clientes descarguen certificados y documentos importantes de forma autónoma en segundos, eliminando la necesidad de trámites manuales o visitas a sucursales.",
+      "image": "/section4/certificados-es.png",
+      "imageAlt": "Un agente de Aurora extrae información del sistema empresarial y genera un certificado de afiliación descargable"
+    },
+    "procedures": {
+      "title": "Trámites",
+      "description": "Automatiza trámites de principio a fin: el agente de IA valida documentos, cruza información, gestiona correcciones y envía los datos a sistemas terceros, sin intervención de asesores ni digitación manual.",
+      "image": "/section4/tramites-es.png",
+      "imageAlt": "Un agente de Aurora verifica al usuario, valida los documentos requeridos y registra el trámite"
+    },
+    "collections": {
+      "title": "Cobros",
+      "description": "Automatiza la cobranza con IA: envía recordatorios personalizados y genera enlaces de pago seguros, siguiendo las políticas y tiempos definidos por tu empresa.",
+      "image": "/section4/cobros-es.png",
+      "imageAlt": "Panel de cobros con dinero recuperado, cumplimiento de promesas y un recordatorio de pago enviado por el agente"
+    }
+  },
+  "marketing": {
+    "title": "Marketing, adquisición y ventas automatizadas",
+    "description": "Acelera el crecimiento del negocio automatizando todo el embudo de ventas en una sola conversación.",
+    "campaigns": {
+      "title": "Marketing",
+      "description": "Lanza mensajes masivos automatizados orientados a la conversión de ventas o a la comunicación estratégica con tus audiencias segmentadas.",
+      "image": "/section5/atencion-cliente-es.png",
+      "imageAlt": "Un agente de Aurora envía una promoción de vacaciones con un folleto descargable y la clienta responde interesada"
+    },
+    "leads": {
+      "title": "Leads",
+      "description": "Automatiza la prospección dejando que la IA mantenga una conversación fluida con el cliente hasta detectar el momento exacto para la venta.",
+      "image": "/section5/leads-es.png",
+      "imageAlt": "Aurora detecta interés en la oferta y registra el lead como clasificado, con audiencia y asesor asignados"
+    },
+    "sales": {
+      "title": "Ventas",
+      "description": "Gestiona flujos de compra personalizados por chat: desde la selección del producto y el pago hasta la integración automática con tu tienda para despacho inmediato.",
+      "image": "/section5/ventas-es.png",
+      "imageAlt": "Seguimiento de una compra por WhatsApp con el carrito creado, el pedido listo y el envío por confirmar"
+    }
+  },
+  "insights": {
+    "title": "Eleva el rendimiento de tu IA con información inteligente",
+    "description": "Conversaciones de IA monitoreadas de extremo a extremo para decisiones empresariales en tiempo real.",
+    "testing": {
+      "title": "Testing y estadísticas",
+      "description": "Pon a prueba tus flujos con clientes reales, evalúa su nivel de satisfacción y descubre oportunidades de mejora al instante",
+      "image": "/section6/calidad-es.png",
+      "imageAlt": "Panel de calidad de conversación con conocimiento fundamentado, respuesta rápida y resolución completa verificados"
+    },
+    "costs": {
+      "title": "Reducción de costos",
+      "description": "Visualiza el impacto directo en la reducción de costos"
+    },
+    "quality": {
+      "title": "Calidad",
+      "description": "Mide la calidad de las interacciones y respuestas por agente"
+    },
+    "analytics": {
+      "title": "Analíticas",
+      "description": "Mide tasas de éxito y métricas de servicio al cliente para optimizar flujos de trabajo en tiempo real.",
+      "activityImage": "/section6/actividad-es.png",
+      "activityAlt": "Gráfica de actividad del agente por día",
+      "interestsImage": "/section6/principales-es.png",
+      "interestsAlt": "Principales intereses de usuarios: gestión de pagos, documentos y soporte técnico"
+    }
+  },
+  "data": {
+    "title": "Los datos ya son tuyos, Aurora los pone a trabajar",
+    "description": "Extraemos datos verificados vía API de tus sistemas principales para construir llamados personalizados para cada necesidad operativa. Automatiza el trabajo pesado y deja que tu equipo se enfoque en lo que más importa.",
+    "imageAlt": "Aurora conectada por API a dos fragmentos de código que importan sus librerías de respuestas y de conocimiento"
+  },
+  "closingCta": {
+    "title": "Descubre cómo los agentes de IA transforman las comunicaciones e impulsan el crecimiento en tiempo real.",
+    "cta": "Agenda un demo"
+  },
+  "exploreAurora": {
+    "title": "Explora Aurora",
+    "subtitle": "Automatiza la operación. Libera el talento. Impulsa el negocio."
+  }
+}

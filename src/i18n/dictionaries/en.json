@@ -1,0 +1,146 @@
+{
+  "metadata": {
+    "title": "Aurora",
+    "description": "Aurora is the AI platform that powers your customer service, operations and marketing teams."
+  },
+  "nav": {
+    "customerService": "Customer service",
+    "operations": "Operations",
+    "marketing": "Marketing",
+    "cta": "Book a demo",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "home": "Go to homepage",
+    "language": "Language",
+    "privacy": "Privacy policy",
+    "terms": "Terms of service"
+  },
+  "footer": {
+    "solutions": "Solutions",
+    "contact": "Contact",
+    "copyright": "{year} Aurora. All rights reserved."
+  },
+  "customerService": {
+    "title": "Powering customer service",
+    "description": "Aurora deploys conversational AI agents to answer questions, escalate requests and automate processes. Leading the era of collaborative work with AI — everything that used to take a full team now happens in a single conversation.",
+    "cta": "Book a demo",
+    "panel": {
+      "title": "One single experience",
+      "description": "From custom agent modules and knowledge base integrations to workflow design, connect your existing tools with ease and oversee your entire hybrid workforce—AI and human—in one place.",
+      "image": "/hero/panel-en.png",
+      "imageAlt": "Aurora dashboard showing customer service metrics"
+    },
+    "control": {
+      "title": "Full control",
+      "description": "The business defines and manages the knowledge and the tools available to each agent.",
+      "image": "/hero/control-total-en.png",
+      "imageAlt": "An Aurora agent looking up documents and an API to reply over WhatsApp"
+    }
+  },
+  "growth": {
+    "title": "Turn conversations into business growth",
+    "description": "Cut operating costs, remove repetitive tasks and let your team focus on high-impact initiatives.",
+    "customerCare": {
+      "title": "Customer service",
+      "description": "Set your agent's tone and style to answer questions instantly on any channel, securely and in real time.",
+      "image": "/section3/atencion-cliente-en.png",
+      "imageAlt": "A person chats from their phone with an Aurora agent that verifies their identity"
+    },
+    "pqrs": {
+      "title": "Requests and complaints",
+      "description": "Handle requests, complaints and claims end to end: gather details in a single chat, apply security filters, notify the user of updates and measure historical performance.",
+      "image": "/section3/PQRS-en.png",
+      "imageAlt": "An Aurora agent files a claim and returns the case number and resolution deadline"
+    }
+  },
+  "workflows": {
+    "title": "Drive end-to-end workflow automation",
+    "description": "Build specialised AI agents configured to your company's requirements and give every department an intelligent collaborative team.",
+    "expandLabel": "View {name}",
+    "schedule": {
+      "title": "Smart scheduling",
+      "description": "Books appointments autonomously, sends automatic reminders, syncs with your calendars and reshuffles your team's availability in real time to remove friction.",
+      "image": "/section4/agenda-en.png",
+      "imageAlt": "An Aurora agent offers available days and time slots and confirms an appointment"
+    },
+    "certificates": {
+      "title": "Certificates",
+      "description": "Lets your customers download certificates and important documents on their own in seconds, with no manual paperwork or branch visits.",
+      "image": "/section4/certificados-en.png",
+      "imageAlt": "An Aurora agent pulls data from the business system and generates a downloadable membership certificate"
+    },
+    "procedures": {
+      "title": "Paperwork",
+      "description": "Automates paperwork end to end: the AI agent validates documents, cross-checks information, handles corrections and sends the data to third-party systems, with no agents involved and no manual data entry.",
+      "image": "/section4/tramites-en.png",
+      "imageAlt": "An Aurora agent verifies the user, validates the required documents and files the request"
+    },
+    "collections": {
+      "title": "Collections",
+      "description": "Automates collections with AI: sends personalised reminders and generates secure payment links, following the policies and timings your company defines.",
+      "image": "/section4/cobros-en.png",
+      "imageAlt": "Collections dashboard with recovered revenue, promise-to-pay rate and a payment reminder sent by the agent"
+    }
+  },
+  "marketing": {
+    "title": "Marketing, Acquisition & Automated Sales",
+    "description": "Accelerate business growth by automating the entire sales funnel through a single conversation.",
+    "campaigns": {
+      "title": "Marketing",
+      "description": "Launch automated mass messages aimed at sales conversion or strategic communication with your segmented audiences.",
+      "image": "/section5/atencion-cliente-en.png",
+      "imageAlt": "An Aurora agent sends a vacation promotion with a downloadable brochure and the customer replies with interest"
+    },
+    "leads": {
+      "title": "Leads",
+      "description": "Automate prospecting by letting AI maintain a fluid conversation with the customer until detecting the exact moment for the sale.",
+      "image": "/section5/leads-en.png",
+      "imageAlt": "Aurora detects interest in the offer and logs the lead as classified, with an audience and an advisor assigned"
+    },
+    "sales": {
+      "title": "Sales",
+      "description": "Manage personalized purchase flows via chat—from product selection and payment to automatic integration with your store for immediate dispatch.",
+      "image": "/section5/ventas-en.png",
+      "imageAlt": "Purchase tracking over WhatsApp with the cart created, the order ready and the shipment pending confirmation"
+    }
+  },
+  "insights": {
+    "title": "Raise your AI's performance with intelligent insight",
+    "description": "AI conversations monitored end to end for real-time business decisions.",
+    "testing": {
+      "title": "Testing and statistics",
+      "description": "Test your flows with real customers, measure how satisfied they are and spot opportunities to improve straight away",
+      "image": "/section6/calidad-en.png",
+      "imageAlt": "Conversation quality panel with grounded knowledge, fast response and full resolution all checked"
+    },
+    "costs": {
+      "title": "Cost reduction",
+      "description": "See the direct impact on cost reduction"
+    },
+    "quality": {
+      "title": "Quality",
+      "description": "Measure the quality of interactions and answers per agent"
+    },
+    "analytics": {
+      "title": "Analytics",
+      "description": "Measure success rates and customer service metrics to optimise workflows in real time.",
+      "activityImage": "/section6/actividad-en.png",
+      "activityAlt": "Chart of agent activity per day",
+      "interestsImage": "/section6/principales-en.png",
+      "interestsAlt": "Top user interests: payment management, documents and technical support"
+    }
+  },
+  "data": {
+    "title": "The data is already yours, Aurora puts it to work",
+    "description": "We pull verified data from your core systems via API to build custom calls for every operational need. Automate the heavy lifting and let your team focus on what matters most.",
+    "imageAlt": "Aurora connected by API to two code snippets importing its responses and knowledge libraries"
+  },
+  "closingCta": {
+    "title": "Discover how AI agents transform communications and drive growth in real time.",
+    "cta": "Book a demo"
+  },
+  "exploreAurora": {
+    "title": "Explore Aurora",
+    "subtitle": "Automate the operation. Free up your talent. Grow the business."
+  }
+}
