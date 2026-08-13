@@ -26,6 +26,20 @@ export async function Data() {
           className="mx-auto mt-12 h-auto w-full max-w-[1600px] lg:mt-16"
         />
       }
+      background={
+        <Image
+          src="/hero/bg.png"
+          alt=""
+          aria-hidden
+          fill
+          priority
+          /* `sizes` deliberadamente por debajo del tamaño real: la imagen es un
+             degradado difuso, así que se sirve a menor resolución sin que se
+             note. Con `100vw` el navegador pedía 3840px = 542 KB; así son ~122 KB. */
+          sizes="40vw"
+          className="-z-10 object-cover"
+        />
+      }
     >
       {/* Columnas asimétricas: el titular necesita más ancho que la
           descripción para partir en dos líneas, como en el diseño. */}
