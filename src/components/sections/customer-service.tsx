@@ -65,7 +65,7 @@ export async function CustomerService({ locale }: CustomerServiceProps) {
           </div>
         </Card>
 
-        <Card variant="outlined" className="flex flex-col p-4">
+        <Card variant="outlined" className="flex flex-col p-4 bg-transparent">
           <div className="flex flex-1 items-center justify-center py-6">
             <Image
               src={t.control.image}
