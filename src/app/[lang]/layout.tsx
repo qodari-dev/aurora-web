@@ -8,6 +8,7 @@ import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { isLocale, locales } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
+import AuroraWidget from "@/components/aurora-widget";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -43,6 +44,7 @@ export default async function RootLayout({
   return (
     <html lang={lang} className={`${inter.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col bg-surface text-ink">
+        <AuroraWidget />
         <SiteHeader locale={lang} />
         <main className="flex-1">{children}</main>
         <SiteFooter locale={lang} />
