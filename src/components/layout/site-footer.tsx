@@ -25,7 +25,7 @@ export async function SiteFooter({ locale }: SiteFooterProps) {
   }));
 
   return (
-    <footer className="relative isolate overflow-hidden rounded-card bg-brand-deep">
+    <footer className="relative isolate overflow-hidden rounded-t-card bg-brand-deep">
       {/* TODO: reutiliza el fondo del banner «Explora Aurora»; falta el export
           propio del footer si en el Figma es otro. */}
       <Image
