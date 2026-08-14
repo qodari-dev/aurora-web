@@ -28,7 +28,7 @@ export async function Data() {
       }
       background={
         <Image
-          src="/hero/bg.png"
+          src="/section7/bg.png"
           alt=""
           aria-hidden
           fill

@@ -1,7 +1,8 @@
 {
   "metadata": {
-    "title": "Aurora",
-    "description": "Aurora es la plataforma de IA que impulsa a tus equipos de servicio al cliente, operaciones y marketing."
+    "siteName": "Aurora",
+    "title": "Automatiza la operación con agentes de IA",
+    "description": "Aurora resuelve preguntas, gestiona trámites y automatiza la cobranza con agentes de IA. Menos carga operativa y decisiones en tiempo real."
   },
   "nav": {
     "customerService": "Servicio al cliente",

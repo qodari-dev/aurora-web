@@ -1,7 +1,8 @@
 {
   "metadata": {
-    "title": "Aurora",
-    "description": "Aurora is the AI platform that powers your customer service, operations and marketing teams."
+    "siteName": "Aurora",
+    "title": "Automate your operation with AI agents",
+    "description": "Aurora answers questions, handles paperwork and automates collections with AI agents. Less operational load and decisions in real time."
   },
   "nav": {
     "customerService": "Customer service",

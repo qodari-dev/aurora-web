@@ -12,7 +12,7 @@ export async function Workflows() {
       id="operaciones"
       background={
         <Image
-          src="/hero/bg.png"
+          src="/section4/bg.png"
           alt=""
           aria-hidden
           fill

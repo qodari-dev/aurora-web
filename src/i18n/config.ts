@@ -15,6 +15,16 @@ export const localeNames: Record<Locale, string> = {
   en: "English",
 };
 
+/**
+ * Open Graph exige el formato `idioma_TERRITORIO`, distinto del código corto
+ * que usan la URL y `hreflang`. Si el público principal es Colombia, aquí es
+ * donde se cambia `es_ES` por `es_CO`.
+ */
+export const openGraphLocales: Record<Locale, string> = {
+  es: "es_CO",
+  en: "en_US",
+};
+
 export function isLocale(value: string): value is Locale {
   return (locales as readonly string[]).includes(value);
 }
