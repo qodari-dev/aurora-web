@@ -1,3 +1,4 @@
+import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
@@ -6,7 +7,12 @@ import "../globals.css";
 
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
-import { openGraphImage, siteUrl } from "@/config/site";
+import {
+  googleAnalyticsId,
+  googleSiteVerification,
+  openGraphImage,
+  siteUrl,
+} from "@/config/site";
 import {
   defaultLocale,
   isLocale,
@@ -76,6 +82,11 @@ export async function generateMetadata({
       description,
       images: [openGraphImage.url],
     },
+
+    /* Solo emite la etiqueta si hay token; si se verifica por DNS, sobra. */
+    ...(googleSiteVerification && {
+      verification: { google: googleSiteVerification },
+    }),
   };
 }
 
@@ -95,6 +106,7 @@ export default async function RootLayout({
         <main className="flex-1">{children}</main>
         <SiteFooter locale={lang} />
       </body>
+      {googleAnalyticsId && <GoogleAnalytics gaId={googleAnalyticsId} />}
     </html>
   );
 }
