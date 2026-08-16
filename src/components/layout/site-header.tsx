@@ -1,8 +1,8 @@
-import Link from "next/link";
 
 import { MobileNav } from "@/components/layout/mobile-nav";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
+import { NavLink } from "@/components/ui/nav-link";
 import { Logo } from "@/components/ui/logo";
 import { headerCta, mainNav } from "@/config/navigation";
 import type { Locale } from "@/i18n/config";
@@ -36,13 +36,13 @@ export async function SiteHeader({ locale }: SiteHeaderProps) {
           className="hidden items-center gap-10 md:flex"
         >
           {items.map((item) => (
-            <Link
+            <NavLink
               key={item.href}
               href={item.href}
               className="text-body text-ink transition-colors hover:text-accent"
             >
               {item.label}
-            </Link>
+            </NavLink>
           ))}
         </nav>
 

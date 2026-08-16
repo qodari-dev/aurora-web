@@ -48,7 +48,19 @@ export function Button({
   const classes = cn(base, variants[variant], sizes[size], className);
 
   if ("href" in props && props.href !== undefined) {
-    return <Link className={classes} {...(props as ButtonAsLink)} />;
+    const linkProps = props as ButtonAsLink;
+    /* Los destinos externos abren en pestaña nueva para no sacar al visitante
+       de la landing. Va aquí y no en cada uso para que sea consistente.
+       `linkProps` se expande después, así que un `target` explícito gana. */
+    const isExternal = /^https?:/.test(linkProps.href);
+
+    return (
+      <Link
+        className={classes}
+        {...(isExternal ? { target: "_blank", rel: "noreferrer" } : {})}
+        {...linkProps}
+      />
+    );
   }
 
   const { type = "button", ...buttonProps } = props as ButtonAsButton;

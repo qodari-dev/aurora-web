@@ -1,9 +1,9 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useState } from "react";
 
 import { Button } from "@/components/ui/button";
+import { NavLink } from "@/components/ui/nav-link";
 
 type MobileNavProps = {
   items: { label: string; href: string }[];
@@ -67,14 +67,14 @@ export function MobileNav({ items, cta, labels }: MobileNavProps) {
         >
           <nav className="flex flex-col gap-1">
             {items.map((item) => (
-              <Link
+              <NavLink
                 key={item.href}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
                 className="rounded-pill px-2 py-3 text-h3 text-ink transition-colors hover:text-accent"
               >
                 {item.label}
-              </Link>
+              </NavLink>
             ))}
           </nav>
 

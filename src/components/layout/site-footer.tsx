@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { LanguageMenu } from "@/components/layout/language-menu";
 import { Container } from "@/components/ui/container";
+import { NavLink } from "@/components/ui/nav-link";
 import { contactLinks, legalLinks, mainNav } from "@/config/navigation";
 import type { Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
@@ -112,19 +113,15 @@ function FooterLink({
   className?: string;
   children: React.ReactNode;
 }) {
-  /* `mailto:` no debe abrir pestaña nueva; solo las URLs externas. */
-  const opensNewTab = href.startsWith("http");
-
   return (
-    <Link
+    <NavLink
       href={href}
-      {...(opensNewTab ? { target: "_blank", rel: "noreferrer" } : {})}
       className={cn(
         "text-body text-ink-inverse transition-opacity hover:opacity-75",
         className,
       )}
     >
       {children}
-    </Link>
+    </NavLink>
   );
 }
