@@ -1,3 +1,4 @@
+import { BadgeCheck, CircleDollarSign, type LucideIcon } from "lucide-react";
 import Image from "next/image";
 
 import { Section } from "@/components/ui/section";
@@ -56,11 +57,7 @@ export async function Insights() {
               sizes="(min-width: 1024px) 266px, (min-width: 640px) 50vw, 100vw"
               className="aspect-528/500"
             >
-              <CardIcon>
-                {/* TODO: reemplazar por el icono exportado del Figma */}
-                <circle cx="12" cy="12" r="9" />
-                <path d="M12 7v10M14.5 9.5a2.5 2.5 0 0 0-2.5-1.2c-1.4 0-2.5.8-2.5 2s1.1 1.7 2.5 1.7 2.5.6 2.5 1.8-1.1 1.9-2.5 1.9a2.6 2.6 0 0 1-2.5-1.4" />
-              </CardIcon>
+              <CardIcon icon={CircleDollarSign} />
               <CardCopy
                 title={t.costs.title}
                 description={t.costs.description}
@@ -73,11 +70,7 @@ export async function Insights() {
               sizes="(min-width: 1024px) 266px, (min-width: 640px) 50vw, 100vw"
               className="aspect-528/500"
             >
-              <CardIcon>
-                {/* TODO: reemplazar por el icono exportado del Figma */}
-                <path d="M12 3.2l2.1 1.6 2.6-.3 1 2.4 2.4 1-.3 2.6 1.6 2.1-1.6 2.1.3 2.6-2.4 1-1 2.4-2.6-.3L12 22l-2.1-1.6-2.6.3-1-2.4-2.4-1 .3-2.6L2.6 12l1.6-2.1-.3-2.6 2.4-1 1-2.4 2.6.3z" />
-                <path d="M9 12.2l2.1 2.1 4-4.2" />
-              </CardIcon>
+              <CardIcon icon={BadgeCheck} />
               <CardCopy
                 title={t.quality.title}
                 description={t.quality.description}
@@ -194,21 +187,10 @@ function CardCopy({
 }
 
 /** Contenedor del icono de las tarjetas pequeñas. */
-function CardIcon({ children }: { children: React.ReactNode }) {
+function CardIcon({ icon: Icon }: { icon: LucideIcon }) {
   return (
     <div className="absolute top-6 left-6 flex size-11 items-center justify-center rounded-xl border border-white/10 bg-white/5">
-      <svg
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        aria-hidden
-        className="size-6 text-ink-inverse"
-      >
-        {children}
-      </svg>
+      <Icon aria-hidden strokeWidth={1.5} className="size-6 text-ink-inverse" />
     </div>
   );
 }

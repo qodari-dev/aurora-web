@@ -17,8 +17,10 @@
     "terms": "Términos de servicio"
   },
   "footer": {
+    "tagline": "Agentes de IA conversacional que atienden, gestionan trámites y automatizan la cobranza, conectados a los sistemas que ya usas.",
     "solutions": "Soluciones",
     "contact": "Contacto",
+    "social": "Síguenos",
     "copyright": "{year} Aurora. Todos los derechos reservados."
   },
   "customerService": {

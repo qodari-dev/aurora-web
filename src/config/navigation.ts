@@ -35,15 +35,23 @@ export const headerCta = {
 } satisfies NavItem;
 
 /**
- * Columna «Contacto» del footer. Las redes van con etiqueta fija (son nombres
- * de marca, no se traducen).
- * TODO: faltan las URLs reales de LinkedIn y YouTube.
+ * Redes sociales del footer. Se muestran como iconos, así que `label` es el
+ * texto accesible, no un texto visible.
+ *
+ * YouTube está retirado hasta que exista el canal; para reactivarlo basta
+ * añadir `{ label: "YouTube", href: "…", icon: "youtube" }`, que el icono
+ * sigue disponible en `brand-icons.tsx`.
  */
-export const contactLinks = [
-  { label: "LinkedIN", href: "#" },
-  { label: "Youtube", href: "#" },
-  { label: "hello@linkaurora.com", href: "mailto:hello@linkaurora.com" },
-];
+export const socialLinks = [
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/company/linkaurora",
+    icon: "linkedin",
+  },
+] as const;
+
+/** Correo de contacto. No se traduce, así que no vive en los diccionarios. */
+export const contactEmail = "hello@linkaurora.com";
 
 /** TODO: apuntan a `#` hasta que existan las páginas legales. */
 export const legalLinks: NavItem[] = [

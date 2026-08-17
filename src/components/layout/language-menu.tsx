@@ -1,5 +1,6 @@
 "use client";
 
+import { ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
@@ -53,21 +54,13 @@ export function LanguageMenu({ locale, label, className }: LanguageMenuProps) {
         className="flex items-center gap-2 rounded-pill py-1 text-body text-ink-inverse transition-opacity hover:opacity-80"
       >
         {localeNames[locale]}
-        <svg
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.8"
-          strokeLinecap="round"
-          strokeLinejoin="round"
+        <ChevronDown
           aria-hidden
           className={cn(
             "size-4 transition-transform duration-200",
             isOpen && "rotate-180",
           )}
-        >
-          <path d="m6 9 6 6 6-6" />
-        </svg>
+        />
       </button>
 
       {isOpen && (
