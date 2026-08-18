@@ -56,7 +56,8 @@ export async function SiteFooter({ locale }: SiteFooterProps) {
   ];
 
   return (
-    <footer className="relative isolate overflow-hidden rounded-card bg-brand-deep">
+    // Solo redondea arriba: abajo cierra a ras del final de la página.
+    <footer className="relative isolate overflow-hidden rounded-t-card bg-brand-deep">
       {/* TODO: reutiliza el fondo del banner «Explora Aurora»; falta el export
           propio del footer si en el Figma es otro. */}
       <Image
@@ -126,7 +127,7 @@ export async function SiteFooter({ locale }: SiteFooterProps) {
           {legalLinks.map((item) => (
             <FooterLink
               key={item.labelKey}
-              href={item.href}
+              href={localizedHref(locale, item.href)}
               className="lg:self-end"
             >
               {dict.nav[item.labelKey]}

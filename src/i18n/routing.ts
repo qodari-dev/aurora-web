@@ -1,8 +1,16 @@
 import { defaultLocale, isLocale, type Locale } from "./config";
 
-/** Prefija una ruta interna con el idioma. Anclas y URLs externas se dejan intactas. */
+/**
+ * Prefija una ruta interna con el idioma. Las URLs externas se dejan intactas.
+ *
+ * Las anclas se resuelven contra la portada (`#seccion` -> `/es#seccion`)
+ * porque todas apuntan a secciones de la landing. Sin el prefijo, desde una
+ * página interna como `/es/terminos` el enlace buscaría un ancla que ahí no
+ * existe y el clic no haría nada.
+ */
 export function localizedHref(locale: Locale, href: string) {
-  if (href.startsWith("#") || /^[a-z]+:/i.test(href)) return href;
+  if (/^[a-z]+:/i.test(href)) return href;
+  if (href.startsWith("#")) return `/${locale}${href}`;
   return `/${locale}${href === "/" ? "" : href}`;
 }
 

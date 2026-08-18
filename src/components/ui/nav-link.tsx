@@ -7,20 +7,20 @@ type NavLinkProps = Omit<React.ComponentProps<"a">, "href"> & {
 /**
  * Enlace de navegación.
  *
- * Los que apuntan a un ancla de la misma página se renderizan como `<a>`
- * nativo a propósito: el router de Next descarta la navegación cuando la URL
- * resultante es idéntica, así que al pulsar dos veces el mismo enlace —o al
- * pulsarlo después de haber hecho scroll a mano— no volvía a saltar. El
- * navegador sí repite el salto en ese caso.
+ * Cualquier destino con ancla (`#seccion` o `/es#seccion`) se renderiza como
+ * `<a>` nativo a propósito: el router de Next descarta la navegación cuando la
+ * URL resultante es idéntica, así que al pulsar dos veces el mismo enlace —o
+ * al pulsarlo después de hacer scroll a mano— no volvía a saltar. El navegador
+ * sí repite el salto.
  *
  * Los destinos externos abren en pestaña nueva.
  */
 export function NavLink({ href, ...props }: NavLinkProps) {
-  if (href.startsWith("#")) {
+  const isExternal = /^https?:/.test(href);
+
+  if (!isExternal && href.includes("#")) {
     return <a href={href} {...props} />;
   }
-
-  const isExternal = /^https?:/.test(href);
 
   return (
     <Link

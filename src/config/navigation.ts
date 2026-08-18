@@ -53,8 +53,7 @@ export const socialLinks = [
 /** Correo de contacto. No se traduce, así que no vive en los diccionarios. */
 export const contactEmail = "hello@linkaurora.com";
 
-/** TODO: apuntan a `#` hasta que existan las páginas legales. */
 export const legalLinks: NavItem[] = [
-  { labelKey: "privacy", href: "#" },
-  { labelKey: "terms", href: "#" },
+  { labelKey: "privacy", href: "/privacidad" },
+  { labelKey: "terms", href: "/terminos" },
 ];
