@@ -3,7 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { LanguageMenu } from "@/components/layout/language-menu";
-import { LinkedinIcon, YoutubeIcon } from "@/components/ui/brand-icons";
+import {
+  LinkedinIcon,
+  WhatsappIcon,
+  YoutubeIcon,
+} from "@/components/ui/brand-icons";
 import { Container } from "@/components/ui/container";
 import { NavLink } from "@/components/ui/nav-link";
 import {
@@ -12,6 +16,7 @@ import {
   legalLinks,
   mainNav,
   socialLinks,
+  whatsappHref,
 } from "@/config/navigation";
 import type { Locale } from "@/i18n/config";
 import { getDictionary } from "@/i18n/dictionaries";
@@ -26,6 +31,7 @@ type FooterLinkItem = {
 
 const socialIcons = {
   linkedin: LinkedinIcon,
+  whatsapp: WhatsappIcon,
   youtube: YoutubeIcon,
 } as const;
 
@@ -52,6 +58,11 @@ export async function SiteFooter({ locale }: SiteFooterProps) {
       label: dict.nav[headerCta.labelKey],
       href: headerCta.href,
       icon: <CalendarDays className="size-4 shrink-0" aria-hidden />,
+    },
+    {
+      label: t.whatsapp,
+      href: whatsappHref,
+      icon: <WhatsappIcon className="size-4 shrink-0" />,
     },
   ];
 

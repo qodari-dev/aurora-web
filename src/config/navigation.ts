@@ -34,6 +34,9 @@ export const headerCta = {
   href: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3EsUMxoQPrB0E8us3oRa-arfEbiL57s9Cz3RhQVF0Ydd-UyqJ-JZy3FEnmXTFTurXk0T8cRLeH",
 } satisfies NavItem;
 
+/** Canal comercial de WhatsApp. El número debe ir sin espacios ni símbolos. */
+export const whatsappHref = "https://wa.me/573243008918";
+
 /**
  * Redes sociales del footer. Se muestran como iconos, así que `label` es el
  * texto accesible, no un texto visible.
@@ -47,6 +50,11 @@ export const socialLinks = [
     label: "LinkedIn",
     href: "https://www.linkedin.com/company/linkaurora",
     icon: "linkedin",
+  },
+  {
+    label: "WhatsApp",
+    href: whatsappHref,
+    icon: "whatsapp",
   },
 ] as const;
 
